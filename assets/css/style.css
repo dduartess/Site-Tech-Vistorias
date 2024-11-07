@@ -1,0 +1,561 @@
+:root{
+    --primary-color: #120a8f;
+    --white-color: #FFFFFF;
+    --gap: 3rem;
+    --ligth-gray-color: #000080;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+h3{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+h4{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin-bottom: 3rem;
+}
+
+.main-bg{
+    background-image: url(../img/mainbg.svg);
+    background-position: center;
+    background-size:contain;
+    color: var(--white-color);
+}
+
+.white-bg{
+    background-image: url(../img/mainbg.svg);
+    background-position: center center;
+    background-size:contain;
+    color: #FFFFFF;
+}
+
+.blue-bg{
+    background: var(--primary-color);
+    background-image: url(../img/mainbg.svg);
+    background-position: center center;
+    background-size:contain;
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding:var(--gap);
+    color: #FFFFFF;
+
+}
+
+.section{
+    min-height: 100vh;
+}
+
+
+.menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    border-bottom: 0.3rem solid var(--ligth-gray-color);
+    z-index: 1;
+    background: var(--primary-color);
+}
+
+.menu-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 1rem;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex
+
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: ' ';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover:after{
+    width: 50%;
+    left: 25%;
+}
+
+.menu h1{
+    font-size: 2rem;
+    color: var(--white-color);
+
+}
+
+.menu h1 a{
+    color: inherit;
+    color: var(--white-color)
+}
+
+
+
+.menu-spacing{
+    height: 65px;
+}
+
+.intro-content{
+    position: relative;
+    top: -10rem;
+    display: grid;
+    grid-template-columns: 1.8fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-shadow: 0 0 5px black;
+}
+
+
+#green-text{
+    color: #DAFA00;
+    text-shadow: 0 0 5px black
+}
+
+.intro-img img{
+    padding-top: 10rem;
+    max-width: 100%;
+    height: auto;
+    margin-top: 150px;
+}
+
+.top3-content{
+    max-width: 80rem;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.8rem;   
+}
+
+.top3-content p{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.top3-content div ul{
+    justify-content: left;
+    margin-bottom: 3rem;
+}
+
+.grid-one-content{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-shadow: 0 0 5px black
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    gap: var(--gap);
+    text-align: center;
+    text-shadow: 0 0 5px black
+}
+
+.grid-one{
+    display:flex;
+    flex-flow: column wrap;
+    min-width: 50%;
+    padding-left: 30px;
+    padding-top: 10rem;
+}
+
+.grid-one h3{
+    text-align: left;
+    margin-left: 10rem;
+   
+}
+
+.grid-description{
+    padding-bottom: 5rem;
+    padding-left: 11rem;
+    text-shadow: 0 0 5px black
+}
+
+.descricao-vistorias{
+    margin-left: 10rem;
+    margin-right: 7rem;
+    padding-top: 5rem;
+    padding-right: 10rem;
+    text-shadow: 0 0 5px black
+}
+
+.third-bg {
+    background-image: url(../img/alternating-arrowhead.svg); /* Use caminho relativo */
+    background-position: center;
+    background-size: cover; /* Ou 'contain', dependendo do que você deseja */
+    color: white;
+}
+
+section .grid-one .grid-one-content .heading-section-tres{
+    margin-top: 10rem;
+    padding-top: 10rem;
+}
+
+
+.green-text{
+    color: #DAFA00
+}
+
+.fourth-bg{
+    margin-left: 10rem;
+    margin-right: 7rem;
+    padding-top: 5rem;
+    padding-right: 10rem;
+}
+
+.img-grid{
+    margin-bottom: 2rem;
+}
+
+.black-text{
+    color:black
+}
+
+
+.black-content{
+    margin-top: 10rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding:var(--gap);
+    color:#DAFA00;
+}
+
+.top4-content{
+    max-width: 50rem;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    text-align: left;
+    font-size: 1.8rem;   
+    color: #FFFFFF;
+    text-shadow: 0 0 5px black
+}
+
+
+
+.close-menu{
+    display: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
+
+.map-content{
+    display: flex;
+    max-width: 120rem;
+    color: #DAFA00;
+    margin: 0 auto;
+    padding-top: 10rem;
+    justify-content: center;  
+    align-items: center;         
+}
+
+.map {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.text-map-content{
+    padding-top: 10rem;
+    color: #DAFA00;
+    text-align: left;
+    margin-left: 15rem;
+}
+
+.fale-conosco{
+    max-width: 120rem;
+    color: #DAFA00;
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.form-group{
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea{
+
+    border: none;
+    background: var(--white-color);
+    padding: 1rem 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    border: 0.5rem solid var(--primary-color);
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: grey;
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 10px 2px solid var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 4rem; /* Reduz o tamanho do título */
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem; /* Ajusta a margem */
+    }
+
+    h3, h4 {
+        font-size: 2.5rem;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr; /* Um só coluna para telas pequenas */
+        top: 5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Uma coluna para o grid */
+    }
+
+    .grid-one {
+        min-width: 100%; /* Aumenta a largura para ocupar todo o espaço */
+        padding-left: 0; /* Remove padding lateral */
+    }
+
+    .descricao-vistorias, .fourth-bg {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2rem; /* Ajusta o padding */
+    }
+
+    .menu ul li a {
+        padding: 1rem; /* Reduz o padding dos links do menu */
+        font-size: 1.6rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .menu h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título do menu */
+    }
+
+    .top3-content {
+        font-size: 1.6rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .img-grid {
+        margin-bottom: 1rem; /* Ajusta o espaço inferior */
+    }
+    .menu{
+        bottom: 0;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 100001;
+        top: 2rem;
+        right: 3rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+
+    }
+    /* × */
+
+    .close-menu:checked~.close-menu-label::after {
+    content:'×';
+    }
+
+    .menu-spacing{
+        display: none;
+    }
+
+    .map-content {
+        padding-top: 2rem;      /* Ajuste ainda menor para telas muito pequenas */
+        padding-bottom: 2rem;   /* Menos espaçamento inferior */
+    }
+
+    .map {
+        width: 100%;            /* O mapa ocupa toda a largura da tela */
+        height: 35vh;           /* O mapa ficará um pouco menor em dispositivos de 600px */
+    }
+
+    .text-map-content {
+        margin-left: 0;         /* Remove a margem esquerda para telas pequenas */
+        padding-top: 2rem;      /* Menos padding superior */
+        text-align: center;     /* Centraliza o texto para dispositivos móveis */
+    }
+    .back-to-top{
+        position: fixed;
+        bottom: 2rem;
+        right: 3rem;
+        background: var(--white-color);
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        transform: rotate(-90deg);
+        border: 0.1rem solid var(--primary-color);
+    }   
+
+    .fale-conosco{
+        max-width: 120rem;
+        color: #DAFA00;
+        margin-left: 3rem;
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+
+    .text-map-content{
+
+        color: #DAFA00;
+        text-align: left;
+        margin-left: 3rem;
+    }
+}
+
+
